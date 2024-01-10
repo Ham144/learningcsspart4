@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #90f95b;
+    --primary-color: #da9f27;
+    --title : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --content: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+nav{
+    padding: 1rem 7rem;
+}
+
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    
+}
+.menus{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: -30px;
+}
+
+.menus span{
+    background-color: var(--main-color);
+    width: 32px;
+    height: 6px;
+    border: 1px solid var(--main-color);
+    margin: 2px;
+}
+.menus span:hover{
+    transform: scale(1.2);
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.title-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 30%;
+}
+.title{
+    text-transform: uppercase;
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 3rem;
+}
+.title span{
+    filter: opacity(50%);
+}
+
+.paragraf{
+    text-wrap: wrap;
+    filter: opacity(80%);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    transition: all 0.4s linear;
+}
+button.shopnow{
+    margin-left: 0;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-right: 2rem;
+}
+button.off50{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+button.shopnow:hover{
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transform: scale(1.3);
+}
+
+button.off50:hover{
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    transform: scale(1.3);
+}
+
+section .main-image{
+    background-image: url(contoh\ pesawat.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    box-shadow: 0px 8px 16px black;
+}
+
+.section2{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.second-section{
+    background: url(contoh\ pesawat.jpg);
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100%;
+    box-shadow: 0px 8px 16px black;
+}
+
+h1.title{
+    font-size: 3.5rem;
+    font-family: var(--title);
+}
+
+button.learn-more{
+    background-color: var(--primary-color);
+}
+
+button.learn-more:hover{
+    transform: scale(1.3);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 785px){
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap: 380px;
+
+    }
+    .main-image{
+        position: absolute;
+        z-index: -1;
+        transform: translate(-450px, -190px);
+        transition: all 1.6s linear;
+        filter: opacity(30%);
+
+    }
+    .title-container{
+        width: 100%;
+        padding: 20px;
+        justify-content: end;
+    }
+}
+
+
